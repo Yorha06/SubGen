@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+models/*.bin
+models/*.gguf
+tools/ffmpeg/*
+tools/whisper.cpp/*
+jobs/*.json
+jobs/**/*.json
+output/*.srt
+temp/
+logs/*.log
+*.log
+
+# SubGen
+config/default.yaml.local

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "subtitle-app"
+version = "0.1.0"
+description = "Video to SRT subtitle transcription tool using whisper.cpp"
+requires-python = ">=3.10"
+
+[project.scripts]
+subtitle-app = "subtitle_app.app:main"

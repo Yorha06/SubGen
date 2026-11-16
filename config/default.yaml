@@ -1,0 +1,38 @@
+# Konfigurasi default aplikasi SubGen
+ffmpeg_path: "tools/ffmpeg/ffmpeg.exe"
+ffprobe_path: "tools/ffmpeg/ffprobe.exe"
+whisper_cpp_path: "tools/whisper.cpp/whisper-cli.exe"
+models_dir: "models"
+jobs_dir: "jobs"
+output_dir: "output"
+temp_dir: "temp"
+
+# Pengaturan audio
+audio_sample_rate: 16000
+audio_channels: 1
+audio_format: "s16"
+
+# Penghatan segmentasi
+segment_length_minutes: 20
+segment_overlap_seconds: 2
+
+# Pengaturan Whisper
+default_model: "ggml-large-v3-turbo-q5_0.bin"
+default_language: "auto"
+beam_size: 5
+vad_enabled: false
+vad_threshold: 0.5
+vad_model_path: ""
+
+# Backend
+preferred_backend: "vulkan"
+fallback_backend: "cpu"
+max_concurrent_gpu_jobs: 1
+
+# Output
+output_encoding: "utf-8"
+output_mode: "original"  # original | translate
+translate_to: "id"
+
+# Job store
+job_store_format: "json"  # json | sqlite
